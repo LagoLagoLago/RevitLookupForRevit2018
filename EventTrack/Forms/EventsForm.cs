@@ -23,19 +23,16 @@
 #endregion // Header
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
-namespace RevitLookup.EventTrack.Forms {    
+namespace RevitLookup.EventTrack.Forms
+{
 
-    public partial class EventsForm : Form {
+    public partial class EventsForm : Form
+    {
 
-        public static Events.ApplicationEvents    m_appEvents       = new Events.ApplicationEvents();
-        public static Events.DocEvents            m_docEvents       = new Events.DocEvents();
+        public static Events.ApplicationEvents m_appEvents = new Events.ApplicationEvents();
+        public static Events.DocEvents m_docEvents = new Events.DocEvents();
 
         public
         EventsForm()
@@ -50,7 +47,7 @@ namespace RevitLookup.EventTrack.Forms {
         event_OnBnOkClick(object sender, EventArgs e)
         {
             SetEventsOnOff(m_appEvents, m_cbAppEventsOn.Checked, false);
-            SetEventsOnOff(m_docEvents, m_cbDocEventsOn.Checked, false);          
+            SetEventsOnOff(m_docEvents, m_cbDocEventsOn.Checked, false);
 
             this.Close();
         }
@@ -58,13 +55,17 @@ namespace RevitLookup.EventTrack.Forms {
         private void
         SetEventsOnOff(Events.EventsBase eventGroup, bool onOff, bool showDetails)
         {
-            if (onOff) {    // on
-                if (eventGroup.AreEventsEnabled == false) {
+            if (onOff)
+            {    // on
+                if (eventGroup.AreEventsEnabled == false)
+                {
                     eventGroup.EnableEvents();
                 }
             }
-            else {          // off
-                if (eventGroup.AreEventsEnabled == true) {
+            else
+            {          // off
+                if (eventGroup.AreEventsEnabled == true)
+                {
                     eventGroup.DisableEvents();
                 }
             }

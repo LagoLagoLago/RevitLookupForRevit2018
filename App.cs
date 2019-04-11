@@ -38,16 +38,14 @@ namespace RevitLookup
     [Regeneration(RegenerationOption.Manual)]
     public class App : IExternalApplication
     {
-        static AddInId m_appId = new AddInId(new Guid(
-          "356CDA5A-E6C5-4c2f-A9EF-B3222116B8C8"));
+        static AddInId m_appId = new AddInId(new Guid("356CDA5A-E6C5-4c2f-A9EF-B3222116B8C8"));
 
         // get the absolute path of this assembly
         static string ExecutingAssemblyPath = Assembly.GetExecutingAssembly().Location;
 
         private AppDocEvents m_appDocEvents;
 
-        public Result OnStartup(
-          UIControlledApplication application)
+        public Result OnStartup(UIControlledApplication application)
         {
 
             // Call this method explicitly in App.cs when Revit starts up because,
@@ -59,8 +57,7 @@ namespace RevitLookup
             return Result.Succeeded;
         }
 
-        public Result OnShutdown(
-          UIControlledApplication application)
+        public Result OnShutdown(UIControlledApplication application)
         {
             RemoveAppDocEvents();
 
