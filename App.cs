@@ -82,6 +82,7 @@ namespace RevitLookup
             //optionsBtn.AddPushButton(new PushButtonData("Test Framework...", "Test Framework...", ExecutingAssemblyPath, "RevitLookup.CmdTestShell"));
 
             var pushbutton = rvtRibbonPanel.AddItem(new PushButtonData("快速查看", "快速查看", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScope")) as PushButton;
+            pushbutton.Image = GetEmbeddedImage("RevitLookup.Resources.RLookup-16.png");
             pushbutton.LargeImage = GetEmbeddedImage("RevitLookup.Resources.RLookup-32.png");
         }
 
