@@ -69,21 +69,28 @@ namespace RevitLookup
             RibbonPanel rvtRibbonPanel = app.CreateRibbonPanel("Revit Lookup");
             PulldownButtonData data = new PulldownButtonData("Options", "Revit Lookup");
             RibbonItem item = rvtRibbonPanel.AddItem(data);
+
+            //下拉框
             PulldownButton optionsBtn = item as PulldownButton;
             // Add Icons to main RevitLookup Menu
             optionsBtn.Image = GetEmbeddedImage("RevitLookup.Resources.RLookup-16.png");
             optionsBtn.LargeImage = GetEmbeddedImage("RevitLookup.Resources.RLookup-32.png");
+            //去掉HelloWorld的命令
             //optionsBtn.AddPushButton(new PushButtonData("HelloWorld", "Hello World...", ExecutingAssemblyPath, "RevitLookup.HelloWorld"));
-            optionsBtn.AddPushButton(new PushButtonData("Snoop Db..", "Snoop DB...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopDb"));
-            optionsBtn.AddPushButton(new PushButtonData("Snoop Current Selection...", "Snoop Current Selection...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScope"));
-            optionsBtn.AddPushButton(new PushButtonData("Snoop Active View...", "Snoop Active View...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopActiveView"));
-            optionsBtn.AddPushButton(new PushButtonData("Snoop Application...", "Snoop Application...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopApp"));
-            optionsBtn.AddPushButton(new PushButtonData("Search and Snoop...", "Search and Snoop...", ExecutingAssemblyPath, "RevitLookup.CmdSearchBy"));
+            optionsBtn.AddPushButton(new PushButtonData("查看数据库...", "查看数据库...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopDb"));
+            optionsBtn.AddPushButton(new PushButtonData("查看当前选择...", "查看当前选择...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScope"));
+            optionsBtn.AddPushButton(new PushButtonData("查看活动视图...", "查看活动视图...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopActiveView"));
+            optionsBtn.AddPushButton(new PushButtonData("查看应用...", "查看应用...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopApp"));
+            optionsBtn.AddPushButton(new PushButtonData("按ID查看...", "按ID查看...", ExecutingAssemblyPath, "RevitLookup.CmdSearchBy"));
             //optionsBtn.AddPushButton(new PushButtonData("Test Framework...", "Test Framework...", ExecutingAssemblyPath, "RevitLookup.CmdTestShell"));
 
             var pushbutton = rvtRibbonPanel.AddItem(new PushButtonData("快速查看", "快速查看", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScope")) as PushButton;
             pushbutton.Image = GetEmbeddedImage("RevitLookup.Resources.RLookup-16.png");
             pushbutton.LargeImage = GetEmbeddedImage("RevitLookup.Resources.RLookup-32.png");
+
+            var pushbuttonSearch = rvtRibbonPanel.AddItem(new PushButtonData("按ID查看", "按ID查看", ExecutingAssemblyPath, "RevitLookup.CmdSearchBy")) as PushButton;
+            pushbuttonSearch.Image = GetEmbeddedImage("RevitLookup.Resources.RLookup-16.png");
+            pushbuttonSearch.LargeImage = GetEmbeddedImage("RevitLookup.Resources.RLookup-32.png");
         }
 
         private void AddAppDocEvents(ControlledApplication app)
