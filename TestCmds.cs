@@ -139,7 +139,6 @@ namespace RevitLookup
                 msg = e.Message;
                 result = Result.Failed;
             }
-
             return result;
         }
     }
