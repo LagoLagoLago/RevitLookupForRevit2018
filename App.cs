@@ -66,6 +66,7 @@ namespace RevitLookup
 
         private void AddMenu(UIControlledApplication app)
         {
+            //²Ëµ¥À¸
             RibbonPanel rvtRibbonPanel = app.CreateRibbonPanel("Revit Lookup");
             PulldownButtonData data = new PulldownButtonData("Options", "Revit Lookup");
             RibbonItem item = rvtRibbonPanel.AddItem(data);

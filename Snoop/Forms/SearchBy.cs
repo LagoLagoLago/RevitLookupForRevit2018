@@ -73,5 +73,27 @@ namespace RevitLookup.Snoop.Forms
             else
                 MessageBox.Show($@"No items with ID {m_tbSearchValue.Text} found");
         }
+
+        private void m_tbSearchValue_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                m_bnFindAndSnoop.PerformClick();
+            }
+        }
+
+        private void SearchBy_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+                e.Handled = true;
+            }
+        }
+
+        private void SearchBy_Load(object sender, System.EventArgs e)
+        {
+            m_tbSearchValue.Focus();
+        }
     }
 }

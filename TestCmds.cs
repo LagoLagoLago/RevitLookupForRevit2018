@@ -255,7 +255,7 @@ namespace RevitLookup
 
             try
             {
-                MessageBox.Show("Called back into RevitLookup by picking toolbar or menu item");
+                MessageBox.Show(@"Called back into RevitLookup by picking toolbar or menu item");
                 result = Result.Succeeded;
             }
             catch (System.Exception e)

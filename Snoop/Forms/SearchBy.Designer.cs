@@ -62,6 +62,7 @@
             this.m_tbSearchValue.Name = "m_tbSearchValue";
             this.m_tbSearchValue.Size = new System.Drawing.Size(229, 21);
             this.m_tbSearchValue.TabIndex = 2;
+            this.m_tbSearchValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.m_tbSearchValue_KeyDown);
             // 
             // label2
             // 
@@ -96,6 +97,8 @@
             this.Name = "SearchBy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchBy";
+            this.Load += new System.EventHandler(this.SearchBy_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SearchBy_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
