@@ -27,6 +27,7 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Reflection;
 using System.Windows.Media.Imaging;
@@ -105,6 +106,11 @@ namespace RevitLookup
             m_appDocEvents.DisableEvents();
         }
 
+        /// <summary>
+        /// 获取嵌入的图片
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         static BitmapSource GetEmbeddedImage(string name)
         {
             try
