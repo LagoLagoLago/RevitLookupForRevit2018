@@ -124,9 +124,8 @@
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="RevitAPI, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+    <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIIFC, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPIIFC.dll</HintPath>
@@ -136,9 +135,8 @@
       <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPIMacros.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RevitAPIUI, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>D:\JDSLCJ20190304\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPIUIMacros, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPIUIMacros.dll</HintPath>
