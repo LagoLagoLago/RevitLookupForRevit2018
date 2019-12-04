@@ -72,20 +72,28 @@ namespace RevitLookup.Snoop.Forms
 
 		new private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( Categories ) );
-			this.SuspendLayout();
-			// 
-			// m_tvObjs
-			// 
-			this.m_tvObjs.LineColor = System.Drawing.Color.Black;
-			// 
-			// Categories
-			// 
-			this.ClientSize = new System.Drawing.Size( 800, 478 );
-			this.Icon = ( (System.Drawing.Icon) ( resources.GetObject( "$this.Icon" ) ) );
-			this.Name = "Categories";
-			this.ResumeLayout( false );
-			this.PerformLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Categories));
+            this.SuspendLayout();
+            // 
+            // m_bnOK
+            // 
+            this.m_bnOK.Location = new System.Drawing.Point(396, 445);
+            // 
+            // m_tvObjs
+            // 
+            this.m_tvObjs.LineColor = System.Drawing.Color.Black;
+            // 
+            // m_lvData
+            // 
+            this.m_lvData.Size = new System.Drawing.Size(524, 411);
+            // 
+            // Categories
+            // 
+            this.ClientSize = new System.Drawing.Size(879, 478);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Categories";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 	}
