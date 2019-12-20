@@ -59,7 +59,7 @@ namespace RevitLookup.Snoop.Forms {
             this.m_listView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.m_listView.Name = "m_listView";
             this.m_listView.ShowItemToolTips = true;
-            this.m_listView.Size = new System.Drawing.Size(684, 534);
+            this.m_listView.Size = new System.Drawing.Size(684, 591);
             this.m_listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.m_listView.TabIndex = 0;
             this.m_listView.UseCompatibleStateImageBehavior = false;
@@ -96,7 +96,7 @@ namespace RevitLookup.Snoop.Forms {
             this.m_bnOk.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.m_bnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.m_bnOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_bnOk.Location = new System.Drawing.Point(314, 586);
+            this.m_bnOk.Location = new System.Drawing.Point(314, 643);
             this.m_bnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.m_bnOk.Name = "m_bnOk";
             this.m_bnOk.Size = new System.Drawing.Size(87, 30);
@@ -160,7 +160,7 @@ namespace RevitLookup.Snoop.Forms {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.m_bnOk;
-            this.ClientSize = new System.Drawing.Size(715, 632);
+            this.ClientSize = new System.Drawing.Size(715, 689);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.m_bnOk);
             this.Controls.Add(this.m_listView);

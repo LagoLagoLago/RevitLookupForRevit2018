@@ -179,7 +179,7 @@ namespace RevitLookup.Snoop.Forms
             this.m_tvObjs.HideSelection = false;
             this.m_tvObjs.Location = new System.Drawing.Point(14, 30);
             this.m_tvObjs.Name = "m_tvObjs";
-            this.m_tvObjs.Size = new System.Drawing.Size(298, 425);
+            this.m_tvObjs.Size = new System.Drawing.Size(298, 622);
             this.m_tvObjs.TabIndex = 0;
             this.m_tvObjs.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeNodeSelected);
             this.m_tvObjs.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.TreeNodeSelected);
@@ -207,7 +207,7 @@ namespace RevitLookup.Snoop.Forms
             this.m_bnOK.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.m_bnOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.m_bnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.m_bnOK.Location = new System.Drawing.Point(397, 462);
+            this.m_bnOK.Location = new System.Drawing.Point(397, 659);
             this.m_bnOK.Name = "m_bnOK";
             this.m_bnOK.Size = new System.Drawing.Size(90, 24);
             this.m_bnOK.TabIndex = 2;
@@ -228,7 +228,7 @@ namespace RevitLookup.Snoop.Forms
             this.m_lvData.Location = new System.Drawing.Point(341, 30);
             this.m_lvData.Name = "m_lvData";
             this.m_lvData.ShowItemToolTips = true;
-            this.m_lvData.Size = new System.Drawing.Size(524, 425);
+            this.m_lvData.Size = new System.Drawing.Size(524, 622);
             this.m_lvData.TabIndex = 3;
             this.m_lvData.UseCompatibleStateImageBehavior = false;
             this.m_lvData.View = System.Windows.Forms.View.Details;
@@ -325,7 +325,7 @@ namespace RevitLookup.Snoop.Forms
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
             this.CancelButton = this.m_bnOK;
-            this.ClientSize = new System.Drawing.Size(879, 492);
+            this.ClientSize = new System.Drawing.Size(879, 689);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.m_lvData);
             this.Controls.Add(this.m_tvObjs);
